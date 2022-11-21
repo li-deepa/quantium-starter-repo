@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+import dash
 
 # loading the data into pandas
 data_1=pd.read_csv("data/daily_sales_data_0.csv")
