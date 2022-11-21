@@ -43,13 +43,14 @@ df=pd.DataFrame()
 df['sales']=sales
 df['date']=date
 df['region']=region
+
+
+
 print(df.head())
 df.to_csv('final_data.csv')
 
 
-# if 'pink morsel' in data['product'] :
-#         data=data.drop(data['product'],axis=0)
-#         print(data.head())
+
 
 
 
