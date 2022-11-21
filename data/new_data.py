@@ -30,14 +30,21 @@ price=data['price'].str.replace('$','')
 price=price.astype('float')
 
 sales=quantity*price
-
+region=data['region']
+date=data['date']
 #print(sales)
 # addding the sales column into data
-data['sales']=sales
+
+
 
 print(data.head())
 # adding the data to csv file
-data.to_csv('final_data.csv')
+df=pd.DataFrame()
+df['sales']=sales
+df['date']=date
+df['region']=region
+print(df.head())
+df.to_csv('final_data.csv')
 
 
 # if 'pink morsel' in data['product'] :
