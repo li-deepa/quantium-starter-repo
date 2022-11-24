@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime
 
 
-# dash_app = Dash(__name__)
+dash_app = Dash(__name__)
 
 
 
